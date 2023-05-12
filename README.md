@@ -67,6 +67,7 @@ Todas as instâncias terminam com uma linha contendo a palavra EOF.
 ## Macroentrega 3: Implementação de interface via Google Colab para interação e visualização das soluções 
 
 A interface de seu programa deve ser disponibilizada por meio do Google Colab. No notebook, o usuário deve ter a opção de fazer o upload de um arquivo. O processamento do algoritmo deve ocorrer chamando o seu projeto dentro do Colab. Ao imprimir sua resposta, utilize uma ferramenta para visualização da solução, tal como Google My Maps. As estatísticas relativas à solução podem ser exibidas por meio de dashboards, utilizando as bibliotecas pandas ou ploty, por exemplo.
+
 Seja criativo na exibição das informações do dashboard. Algumas ideias: 
 * Quantidade de veículos utilizados; 
 * Custo total do trajeto realizado por todos os veículos utilizados; 
@@ -74,3 +75,22 @@ Seja criativo na exibição das informações do dashboard. Algumas ideias:
 * Maior e menor distância percorrida por cada veículo considerando cada par de pontos visitados na sequência
 
 ## Como executar
+
+requisitos: ter conta no Google Colab
+
+### Para executar o graphic_m3
+
+1. * Coloque o arquivo disponibilizado neste repositório chamado "report.csv" na parte de arquivos do Google Colab ou da IDE que estiver usando. 
+2. * Rode o script do Colab bloco por bloco, para que as saídas saiam organizadas e para que sua visualização seja melhor.
+3. * Enfim, siga as intruções dadas durante a execução do código
+
+### Para executar o map_ploting_m3
+
+1. * Baixe a pasta disponibilizada neste repositório chamada "outputs".
+2. * Abra a pasta "outputs", selecione uma instância e coloque-a na parte de arquivos do Google Colab ou da IDE que estiver usando (não coloque a pasta toda, pois o Colab não suporta).
+3. * Digite o nome da instância quando for pedido, seguindo o exemplo fornecido, para que o programa possa realizar os mapas.
+4. * Rode o script do Colab bloco por bloco, para que as saídas saiam organizadas e para que sua visualização seja melhor.
+5. * Enfim, siga as intruções dadas durante a execução do código.
+
+*Observação: os arquivos das rotas geram um html, então é necessário fazer o download dos arquivos gerados e abrí-los. Eles ficam na parte de arquivos do Colab*
+

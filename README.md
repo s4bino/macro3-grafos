@@ -1,11 +1,17 @@
 # Projeto final - macroentrega 3
 
 ## Sobre o projeto 
-Ao analisarmos o problema referente à Macroentrega 2, identificamos como uma “variação” do Problema do Caixeiro-Viajante (PCV), onde temos que: partir de um ponto de origem (depósito), traçar uma rota na qual passamos pelos pontos de coleta e, após isso, passar pelos seus respectivos pontos de entrega e, ao final, voltar ao ponto de origem, isso passando pela menor rota possível. Entretanto, há mais uma variável a ser considerada, as janelas de tempo, tanto do depósito, quanto do ponto de coleta, quanto do cliente. Por conta dessa variável a ser considerada, torna-se uma “variação” do PCV. Pelo fato de as arestas serem ponderadas com o tempo, temos que além de traçar a menor rota, obedecer às janelas de tempo. Pensando de modo simplista, seria somente usar vários caminhões e resolver o problema, mas temos que considerar também a menor quantidade de caminhões possíveis. Dessa forma, temos que fazer com que cada caminhão seja usado da melhor maneira possível. 
 
-O algoritmo que resolve este problema, foi implementado na macroentrega 2. O foco deste repositório é a macroentrega 3, onde é feita uma estatística descritiva das saídas, realizando a visualização de dados da comparação com os resultados obtidos pelo nosso algoritmo de resolução do problema, com os resultados ótimos.
+O projeto foi divido em 3 partes (macroentregas):
+1. * Macroentrega 1: leitura de arquivo e verificar soluções geradas
+2. * Macroentrega 2: resolução do Problema do Caixeiro Viajante
+3. * Macroentrega 3: estatística descrittiva dos dados (soluções) geradas pelo algoritmo da  macroentrega 2.
 
-## Descrição do Problema geral
+* Contextualizando Ao analisarmos o problema referente à Macroentrega 2, identificamos como uma “variação” do Problema do Caixeiro-Viajante (PCV), onde temos que: partir de um ponto de origem (depósito), traçar uma rota na qual passamos pelos pontos de coleta e, após isso, passar pelos seus respectivos pontos de entrega e, ao final, voltar ao ponto de origem, isso passando pela menor rota possível. Entretanto, há mais uma variável a ser considerada, as janelas de tempo, tanto do depósito, quanto do ponto de coleta, quanto do cliente. Por conta dessa variável a ser considerada, torna-se uma “variação” do PCV. Pelo fato de as arestas serem ponderadas com o tempo, temos que além de traçar a menor rota, obedecer às janelas de tempo. Pensando de modo simplista, seria somente usar vários caminhões e resolver o problema, mas temos que considerar também a menor quantidade de caminhões possíveis. Dessa forma, temos que fazer com que cada caminhão seja usado da melhor maneira possível. 
+
+* O algoritmo que resolve este problema, foi implementado na macroentrega 2. **O foco deste repositório é a macroentrega 3**, onde é feita uma estatística descritiva das saídas, realizando a visualização de dados da comparação com os resultados obtidos pelo nosso algoritmo de resolução do problema (macroentrega 2) com os resultados ótimos (que não é possível ser melhor).
+
+## Descrição melhor detalhada do problema (Não é necessário ler, somente caso queira entender melhor o que é o problema)
 Durante a pandemia, a demanda por serviços logísticos cresceu em virtude do aumento de compras online (Fonte: [“Logística cresce na pandemia com aumento de compras pela internet”, por Paula Monteiro, em Pequenas Empresas & Grandes Negócios](https://g1.globo.com/economia/pme/pequenas-empresas-grandes-negocios/noticia/2021/01/31/logistica-cresce-na-pandemia-com-aumento-de-compras-pela-internet.ghtml)). Grandes empresas que realizam suas operações de entregas de produtos buscam sempre uma redução de custos logísticos, a fim de utilizar tal economia de recursos em outros investimentos de interesse corporativo. Um dos problemas mais comuns nesses contextos é descrito formalmente abaixo.
 
 Considere que uma empresa possua uma frota de veículos M e um conjunto de clientes C a serem atendidos. O deslocamento dos veículos pode ser modelado através de um grafo direcionado $G = (V, A)$. O conjunto de vértices do grafo pode ser representado por $V = P \cup D \cup \\{0\\}$, em que $P$ representa o conjunto de pontos de coleta, $D$ o conjunto de pontos de entrega e 0 representa o depósito. O conjunto de arcos é denotado por A, e representa as conexões entre os vértices, seja depósito ou clientes. A cada arco $(i, j)$, $i \ne j$, associa-se um custo $c_{ij}$ e um tempo $t_{ij}$.
@@ -30,7 +36,7 @@ pedidos, respeitando as restrições do problema.
 
 Desenvolva um algoritmo eficiente, que retorne uma solução viável para o problema descrito acima. Para tanto, as linguagens de programação C++ e Python podem ser utilizadas.
 
-## Base de Dados
+## Base de Dados (Não é necessário ler, somente caso queira saber melhor o que tem em cada instância)
 Trinta instâncias foram selecionadas da literatura para a seção de experimentos computacionais deste trabalho.
 
 As primeiras 10 linhas de cada arquivo contém informações gerais sobre a instância:
@@ -64,7 +70,9 @@ Após todos os NODES, existe uma linha contendo a palavra EDGES seguida de $SIZE
 
 Todas as instâncias terminam com uma linha contendo a palavra EOF.
 
-## Macroentrega 3: Implementação de interface via Google Colab para interação e visualização das soluções 
+## O que foi pedido na Macroentrega 3: 
+
+### Implementação de interface via Google Colab para interação e visualização das soluções 
 
 A interface de seu programa deve ser disponibilizada por meio do Google Colab. No notebook, o usuário deve ter a opção de fazer o upload de um arquivo. O processamento do algoritmo deve ocorrer chamando o seu projeto dentro do Colab. Ao imprimir sua resposta, utilize uma ferramenta para visualização da solução, tal como Google My Maps. As estatísticas relativas à solução podem ser exibidas por meio de dashboards, utilizando as bibliotecas pandas ou ploty, por exemplo.
 
@@ -78,13 +86,13 @@ Seja criativo na exibição das informações do dashboard. Algumas ideias:
 
 requisitos: ter conta no Google Colab
 
-### Para executar o graphic_m3
+### Para executar o ``graphic_m3``
 
 1. * Coloque o arquivo disponibilizado neste repositório chamado "report.csv" na parte de arquivos do Google Colab ou da IDE que estiver usando. 
 2. * Rode o script do Colab bloco por bloco, para que as saídas saiam organizadas e para que sua visualização seja melhor.
 3. * Enfim, siga as intruções dadas durante a execução do código
 
-### Para executar o map_ploting_m3
+### Para executar o ``map_ploting_m3``
 
 1. * Baixe a pasta disponibilizada neste repositório chamada "outputs".
 2. * Abra a pasta "outputs", selecione uma instância e coloque-a na parte de arquivos do Google Colab ou da IDE que estiver usando (não coloque a pasta toda, pois o Colab não suporta).
@@ -92,5 +100,30 @@ requisitos: ter conta no Google Colab
 4. * Rode o script do Colab bloco por bloco, para que as saídas saiam organizadas e para que sua visualização seja melhor.
 5. * Enfim, siga as intruções dadas durante a execução do código.
 
-*Observação: os arquivos das rotas geram um html, então é necessário fazer o download dos arquivos gerados e abrí-los. Eles ficam na parte de arquivos do Colab*
+***Observação: os arquivos das rotas geram um html, então é necessário fazer o download dos arquivos gerados e abrí-los. Eles ficam na parte de arquivos do Colab***
+
+## Exemplo de algumas saídas geradas por estes algoritmos (caso não tenha experiência com Google Colab)
+
+Todas as saídas geram um html onde é possível interagir com o gráfico ou mapa, disponibilizei exemplos desses html's no repositório 
+
+### Saídas do ``graphic_m3``:
+
+![newplot (2)](https://github.com/s4bino/macro3-grafos/assets/121155839/bc81872f-8326-4ee3-82bd-be771af4dfd1)
+
+![newplot (3)](https://github.com/s4bino/macro3-grafos/assets/121155839/d71bd0fa-a57f-4b92-9bd5-a185f8307006)
+
+
+## Saídas do ``map_ploting_m3``:
+
+### pontos de entrega e coleta
+![image](https://github.com/s4bino/macro3-grafos/assets/121155839/6950b6f8-e309-4972-877b-968c5997a2e2)
+
+### rota de 1 caminhão
+
+![image](https://github.com/s4bino/macro3-grafos/assets/121155839/129b5598-5fd9-4ae9-89cc-574df6060705)
+
+### mapa de calor dos pontos de entrega
+
+![image](https://github.com/s4bino/macro3-grafos/assets/121155839/c37f9794-b84c-469c-bb70-53f75e485515)
+
 

@@ -90,7 +90,7 @@ requisitos: ter conta no Google Colab
 
 * Antes de tudo, baixe este repositório na sua máquina. Isso é possível clicando no botão verde, escrito "code", localizado no canto superior direito acima do repositório e depois clicando em "download zip", ou dê um git clone neste repositório.
 
-* Abra o Google Colab (https://colab.research.google.com/), vá em Arquivo -> Abrir notebook -> Upload. Após ter **descompactado** a pasta deste repositório, coloque ou o código ``graphic_m3`` ou o ```map_ploting_m3`` no campo de Upload do Colab.
+* Abra o Google Colab (https://colab.research.google.com/), vá em Arquivo -> Abrir notebook -> Upload. Após ter **descompactado** a pasta deste repositório, coloque ou o código ``graphic_m3`` ou o ``map_ploting_m3`` no campo de Upload do Colab.
 
 ### Para executar o ``graphic_m3``
 

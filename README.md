@@ -7,7 +7,9 @@ O projeto foi divido em 3 partes (macroentregas):
 2. * Macroentrega 2: resolução do Problema do Caixeiro Viajante
 3. * Macroentrega 3: estatística descrittiva dos dados (soluções) geradas pelo algoritmo da  macroentrega 2.
 
-* Contextualizando Ao analisarmos o problema referente à Macroentrega 2, identificamos como uma “variação” do Problema do Caixeiro-Viajante (PCV), onde temos que: partir de um ponto de origem (depósito), traçar uma rota na qual passamos pelos pontos de coleta e, após isso, passar pelos seus respectivos pontos de entrega e, ao final, voltar ao ponto de origem, isso passando pela menor rota possível. Entretanto, há mais uma variável a ser considerada, as janelas de tempo, tanto do depósito, quanto do ponto de coleta, quanto do cliente. Por conta dessa variável a ser considerada, torna-se uma “variação” do PCV. Pelo fato de as arestas serem ponderadas com o tempo, temos que além de traçar a menor rota, obedecer às janelas de tempo. Pensando de modo simplista, seria somente usar vários caminhões e resolver o problema, mas temos que considerar também a menor quantidade de caminhões possíveis. Dessa forma, temos que fazer com que cada caminhão seja usado da melhor maneira possível. 
+* **O foco deste repositório é a macroentrega 3**
+
+* Contextualizando: Ao analisarmos o problema referente à Macroentrega 2, identificamos como uma “variação” do Problema do Caixeiro-Viajante (PCV), onde temos que: partir de um ponto de origem (depósito), traçar uma rota na qual passamos pelos pontos de coleta e, após isso, passar pelos seus respectivos pontos de entrega e, ao final, voltar ao ponto de origem, isso passando pela menor rota possível. Entretanto, há mais uma variável a ser considerada, as janelas de tempo, tanto do depósito, quanto do ponto de coleta, quanto do cliente. Por conta dessa variável a ser considerada, torna-se uma “variação” do PCV. Pelo fato de as arestas serem ponderadas com o tempo, temos que além de traçar a menor rota, obedecer às janelas de tempo. Pensando de modo simplista, seria somente usar vários caminhões e resolver o problema, mas temos que considerar também a menor quantidade de caminhões possíveis. Dessa forma, temos que fazer com que cada caminhão seja usado da melhor maneira possível. 
 
 * O algoritmo que resolve este problema, foi implementado na macroentrega 2. **O foco deste repositório é a macroentrega 3**, onde é feita uma estatística descritiva das saídas, realizando a visualização de dados da comparação com os resultados obtidos pelo nosso algoritmo de resolução do problema (macroentrega 2) com os resultados ótimos (que não é possível ser melhor).
 
@@ -86,21 +88,25 @@ Seja criativo na exibição das informações do dashboard. Algumas ideias:
 
 requisitos: ter conta no Google Colab
 
+* Antes de tudo, baixe este repositório na sua máquina. Isso é possível clicando no botão verde, escrito "code", localizado no canto superior direito acima do repositório e depois clicando em "download zip", ou dê um git clone neste repositório.
+
+* Abra o Google Colab (https://colab.research.google.com/), vá em Arquivo -> Abrir notebook -> Upload. Após ter **descompactado** a pasta deste repositório, coloque ou o código ``graphic_m3`` ou o ```map_ploting_m3`` no campo de Upload do Colab.
+
 ### Para executar o ``graphic_m3``
 
 1. * Coloque o arquivo disponibilizado neste repositório chamado "report.csv" na parte de arquivos do Google Colab ou da IDE que estiver usando. 
-2. * Rode o script do Colab bloco por bloco, para que as saídas saiam organizadas e para que sua visualização seja melhor.
+2. * Rode o script do Colab bloco por bloco, **desde o início**, para que as saídas saiam organizadas e para que sua visualização seja melhor. Ou apenas clique em Ambiente de execução -> Executar tudo.
 3. * Enfim, siga as intruções dadas durante a execução do código
 
 ### Para executar o ``map_ploting_m3``
 
 1. * Baixe a pasta disponibilizada neste repositório chamada "outputs".
-2. * Abra a pasta "outputs", selecione uma instância e coloque-a na parte de arquivos do Google Colab ou da IDE que estiver usando (não coloque a pasta toda, pois o Colab não suporta).
-3. * Digite o nome da instância quando for pedido, seguindo o exemplo fornecido, para que o programa possa realizar os mapas.
-4. * Rode o script do Colab bloco por bloco, para que as saídas saiam organizadas e para que sua visualização seja melhor.
-5. * Enfim, siga as intruções dadas durante a execução do código.
+2. * Abra a pasta "outputs", selecione uma instância e coloque-a na parte de arquivos do Google Colab ou da IDE que estiver usando, não coloque a pasta toda, pois o Colab não suporta. (É recomendado que pegue instâncias menores, o número de pontos de entrega e coleta está no nome do arquivo, bar1-**n100**, por exemplo, possui 100 pontos de coleta e entrega, o que é uma pequna quantidade e ficará viável de se visualizar).
+3. * Digite o nome da instância (arquivo que você colocou na pasta do Colab) quando for pedido, seguindo o exemplo fornecido, para que o programa possa realizar os mapas. 
+4. * Rode o script do Colab bloco por bloco, **desde o início**, para que as saídas saiam organizadas e para que sua visualização seja melhor. Ou apenas clique em Ambiente de execução -> Executar tudo.
+5. * Enfim, **siga as intruções dadas durante a execução do código**.
 
-***Observação: os arquivos das rotas geram um html, então é necessário fazer o download dos arquivos gerados e abrí-los. Eles ficam na parte de arquivos do Colab***
+#### ***Observação: os arquivos das rotas geram um html, então é necessário fazer o download dos arquivos gerados e abrí-los. Eles ficam na parte de arquivos do Colab***
 
 ## Exemplo de algumas saídas geradas por estes algoritmos (caso não tenha experiência com Google Colab)
 
